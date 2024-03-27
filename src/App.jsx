@@ -21,9 +21,11 @@ function App() {
         <div className='newsContainer'>
           {news.map((val, key) => {
             return ( 
-              <div key={key}> 
+              <div key={key} className='article'> 
                 <h3>{val.title}</h3>
                 <img src={val.imageUrl}/>
+                <p>{val.summary}</p>
+                <h4>{val.publishedAt}</h4>
               </div>
             )
           })}
