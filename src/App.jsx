@@ -20,7 +20,12 @@ function App() {
         </div>
         <div className='newsContainer'>
           {news.map((val, key) => {
-            return <div key={key}> {val.title} </div>
+            return ( 
+              <div key={key}> 
+                <h3>{val.title}</h3>
+                <img src={val.imageUrl}/>
+              </div>
+            )
           })}
         </div>
       </div>
